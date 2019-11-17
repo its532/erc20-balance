@@ -10,7 +10,7 @@ web3.js 0.20.6
 # Usage
 
 イメージをビルドする<br>
-`docker build -t イメージ名`
+`docker build -t イメージ名 .`
 
 コンテナ起動<br>
 `docker run -p 8080:80 -d イメージ名`
