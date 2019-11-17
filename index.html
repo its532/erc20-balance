@@ -45,7 +45,6 @@
         ];
 
         let contract = web3.eth.contract(minABI).at(tokenAddress);
-        console.log(contract);
 
         contract.balanceOf(walletAddress, (error, balance) => {
           contract.decimals((error, decimals) => {
@@ -56,6 +55,7 @@
         });
       }
 
+      //残高の結果を表示
       function onAddressChange(e) {
         let tokenAddress = document.getElementById("token-address").value;
         let walletAddress = document.getElementById("wallet-address").value;
@@ -66,6 +66,7 @@
         }
       }
 
+      //web3 読み込み
       window.onload = function() {
         if (typeof web3 !== "undefined") {
           web3 = new Web3(web3.currentProvider);
