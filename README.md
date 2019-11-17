@@ -4,7 +4,7 @@
 # Dependency
 HTML<br>
 javascript<br>
-web3.js 1.0.0-beta.55
+web3.js 0.20.6
 
 
 # Usage
